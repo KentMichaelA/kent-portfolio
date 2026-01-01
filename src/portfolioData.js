@@ -69,3 +69,18 @@ export const certifications = [
     image: "certs/HTB.webp"
   }
 ];
+
+export const skills = [
+  {
+    category: "Languages",
+    items: ["Python", "Bash", "JavaScript", "SQL", "HTML/CSS", "React", "Tailwind"]
+  },
+  {
+    category: "Security Tools",
+    items: ["Burp Suite", "Splunk", "LimaCharlie", "Tines", "Wireshark", "Metasploit", "Nmap", "ELK Stack", "IDA", "IDS/IPS", "Yara", "Sigma"]
+  },
+  {
+    category: "Infrastructure",
+    items: ["Windows Server", "Linux", "Active Directory", "Docker", "Git", "AWS"]
+  }
+];
