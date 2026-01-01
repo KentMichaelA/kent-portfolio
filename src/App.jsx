@@ -27,13 +27,29 @@ const App = () => {
   return (
     <div className="min-h-screen bg-slate-900 text-slate-300 selection:bg-cyan-500/30">
       
-      {/* Navigation */}
+     {/* Navigation */}
       <nav className="fixed w-full bg-slate-900/90 backdrop-blur-sm z-50 border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          {/* LOGO UPDATED TO 'PORTFOLIO' */}
-          <div className="text-cyan-400 font-bold text-xl tracking-tighter border border-cyan-400/30 p-1 px-3 rounded hover:bg-cyan-400/10 transition-colors cursor-pointer">
-            Portfolio
+          
+          {/* --- LEFT SIDE: LOGO & TEXT GROUP --- */}
+          <div className="flex items-center gap-4 group cursor-pointer">
+            
+            {/* Logo Image Container */}
+            <div className="w-10 h-10 rounded-lg overflow-hidden border border-cyan-400/30 shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-400/50 transition-all">
+              <img 
+                src="/logo.png" 
+                alt="KMA Logo" 
+                className="w-full h-full object-cover" 
+              />
+            </div>
+            
+            {/* Text */}
+            <span className="font-bold text-xl text-slate-100 tracking-tight group-hover:text-cyan-400 transition-colors">
+              Portfolio
+            </span>
           </div>
+
+          {/* --- RIGHT SIDE: LINKS --- */}
           <div className="hidden md:flex gap-8 text-sm font-medium">
             {['About', 'Skills', 'Experience', 'Projects', 'Contact'].map((item) => (
               <a 
@@ -45,6 +61,7 @@ const App = () => {
               </a>
             ))}
           </div>
+
         </div>
       </nav>
 
@@ -222,7 +239,7 @@ const App = () => {
       <footer id="contact" className="py-20 text-center">
         <h2 className="text-4xl font-bold text-slate-100 mb-6">Get In Touch</h2>
         <p className="text-slate-400 max-w-md mx-auto mb-10">
-          I'm currently looking for new opportunities in Cloud Security and Software Engineering. Whether you have a question or just want to say hi, my inbox is open!
+          I'm currently looking for new opportunities in Security Analyst, Penetration Testing and Cloud Engineering. Whether you have a question or just want to say hi, my inbox is open!
         </p>
         <a href={`mailto:${personalInfo.email}`} className="border border-cyan-400 text-cyan-400 px-8 py-4 rounded hover:bg-cyan-400/10 transition-all">
           Say Hello
