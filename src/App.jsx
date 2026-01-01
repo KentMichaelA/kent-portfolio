@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Github, Mail, MapPin, ExternalLink, Terminal, Shield, Cpu, ChevronRight, Download, Server, Code, Database } from 'lucide-react';
+import { Github, Mail, MapPin, ExternalLink, Terminal, Shield, Cpu, ChevronRight, Download, Server, Code, Database, Linkedin, BookText } from 'lucide-react';
 import { personalInfo, experiences, projects, certifications, skills } from './portfolioData';
 
 // Reusable Section Component
@@ -218,6 +218,7 @@ const App = () => {
       </Section>
 
       {/* Footer / Contact */}
+      {/* Footer / Contact */}
       <footer id="contact" className="py-20 text-center">
         <h2 className="text-4xl font-bold text-slate-100 mb-6">Get In Touch</h2>
         <p className="text-slate-400 max-w-md mx-auto mb-10">
@@ -226,9 +227,20 @@ const App = () => {
         <a href={`mailto:${personalInfo.email}`} className="border border-cyan-400 text-cyan-400 px-8 py-4 rounded hover:bg-cyan-400/10 transition-all">
           Say Hello
         </a>
-        <div className="mt-20 flex justify-center gap-6 text-slate-500">
-          <a href={personalInfo.github} target="_blank" rel="noreferrer" className="hover:text-cyan-400 transition-colors"><Github /></a>
+        
+        {/* Social Links Container */}
+        <div className="mt-20 flex justify-center gap-8">
+          <a href={personalInfo.github} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-cyan-400 transition-colors">
+            <Github className="w-8 h-8" />
+          </a>
+          <a href={personalInfo.linkedin} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-cyan-400 transition-colors">
+            <Linkedin className="w-8 h-8" />
+          </a>
+          <a href={personalInfo.medium} target="_blank" rel="noreferrer" className="text-slate-500 hover:text-cyan-400 transition-colors">
+            <BookText className="w-8 h-8" /> {/* Using BookText icon for Medium/Blog */}
+          </a>
         </div>
+
         <p className="text-slate-700 text-xs mt-8">Designed & Built by Kent Michael Antony</p>
       </footer>
     </div>

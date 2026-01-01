@@ -6,6 +6,8 @@ export const personalInfo = {
   about: "I am a Computer Science student at National Taiwan Ocean University with a passion for building secure, scalable infrastructures. Integrating a growth mindset with technical expertise in automation, cybersecurity, and full-stack development, I aim to empower organizations by identifying growth opportunities and resolving complex technical blockers. I am committed to delivering optimized solutions that minimize business risks.",
   email: "kent.ma04@gmail.com",
   github: "https://github.com/KentMichaelA",
+  linkedin: "https://www.linkedin.com/in/kent-michael-antony-943027271/", // Added
+  medium: "https://medium.com/@kent.ma04", // Added
   location: "Keelung, Taiwan"
 };
 
